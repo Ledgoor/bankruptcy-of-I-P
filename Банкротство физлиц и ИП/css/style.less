@@ -1,0 +1,316 @@
+//compress: true
+
+body {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,a {
+    margin: 0 auto;
+}
+
+.container {
+    padding: 120px 15px ;
+    max-width: 1200px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 150px 15px ;
+        max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 250px 30px ;
+        max-width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 350px 15px ;
+        max-width: 641px;
+  }
+}
+
+/*----- header -----*/
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header li {
+    font-size: 14px;
+    font-family: 'Pt Sans Caption',Arial,sans-serif;
+    line-height: 2;
+    font-weight: 400;
+    list-style-type:none;
+}
+
+@media (max-width: 1024px) {
+    .header li {
+        font-size: 12px;
+        font-family: 'Pt Sans Caption',Arial,sans-serif;
+        line-height: 2;
+        font-weight: 400;
+        list-style-type:none;
+  }
+}
+
+@media (max-width: 768px) {
+    .header li {
+        font-size: 11px;
+        font-family: 'Pt Sans Caption',Arial,sans-serif;
+        line-height: 2;
+        font-weight: 400;
+        list-style-type:none;
+  }
+}
+
+.header a {
+    color: #000;
+    text-decoration: none;
+}
+
+/*----- footer header -----*/
+
+.footer_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_header li {
+    font-size: 14px;
+    font-family: 'Pt Sans Caption',Arial,sans-serif;
+    line-height: 3;
+    font-weight: 400;
+    list-style-type:none;
+}
+
+.footer_header a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer_menu {
+    width: 450px;
+    padding-bottom: 50px;
+}
+
+.footer_logo {
+    margin-top: 25px;
+    width: 600px;
+}
+
+.footer_logo img {
+    width: 350px;
+    height: 55px;
+}
+
+/*---------------------------*/
+
+.main {
+    position: relative;
+    max-width: 100%;
+}
+
+/***** Logo ******/
+.logo {
+    width: 75%;
+}
+
+@media (max-width: 992px) {
+    .logo {
+        width: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        padding-bottom: 60px;
+  }
+}
+
+.logo img {
+    width: 250px;
+    height: 45px;
+}
+
+.nav_menu {
+    text-align: left;
+    width: 10%;
+}
+
+@media (max-width: 992px) {
+    .nav_menu {
+        width: 10%;
+  }
+}
+
+.nav_contact {
+    text-align: right;
+    width: 15%;
+}
+
+@media (max-width: 992px) {
+    .nav_contact {
+        width: 20%;
+  }
+}
+
+/*----- скрытый контент -----*/
+@media screen and (max-width:576px) {
+    .nav_menu  {
+        display: none;
+    }
+    .nav_contact {
+        display: none;
+    }
+}
+
+/***** Slider ******/
+
+.slider {
+    margin-top: 10px;
+    width: 65%;
+}
+
+@media (max-width: 992px) {
+    .slider {
+        margin-top: 10px;
+        width: 45%;
+  }
+}
+
+.next {
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.next img {
+    margin-top: 50px;
+    width: 50%;
+    float: right;
+}
+
+/*----- footer -----*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+    width: 100%;
+}
+
+.footer_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.copyright {
+    width: 580px;
+}
+
+.address {
+    width: 520px;
+}
+
+.society {
+    
+}
+/*--------------------*/
+
+.practices {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+.practic_tit {
+    max-width: 460px;
+}
+
+.practic_txt {
+    max-width: 770px;
+}
+
+/*----- burger  -----*/
+
+.header_header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.header_header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #5e5373;
+}
+
+.header_container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header_body {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.header_logo {
+    font: 0 0 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.header_logo img {
+    max-width: 100%;
+    display: block;
+}
+
+.header_burger {
+    display: none;
+}
+
+@media (max-width: 767px;) {
+    .header_burger {
+        display: block;
+    }
+}
+
+.header_menu {
+    display: none;
+}
+
+.header_list {
+    display: flex;
+}
